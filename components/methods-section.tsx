@@ -14,7 +14,7 @@ const methods = [
       "Đây là nhiệm vụ trung tâm để phát triển nhanh và bền vững đất nước. Cần ứng dụng mạnh mẽ các thành tựu của khoa học, công nghệ vào mọi lĩnh vực, đặc biệt trong các ngành then chốt.",
     examples: [
       "Chuyển đổi số – Cách mạng công nghiệp 4.0\nViệt Nam thúc đẩy Chương trình Chuyển đổi số quốc gia.\nCác tập đoàn lớn như Viettel, FPT, VNPT đầu tư mạnh vào AI, điện toán đám mây, trung tâm dữ liệu (data center).",
-      "Phát triển hạ tầng hiện đại\nKhởi công và thi công cao tốc Bắc – Nam giai đoạn 2 (2021–2025), tổng chiều dài hơn 700 km.\nDự án Sân bay Long Thành.",
+      "Phát triển hạ tầng hiện đại\nKhởi công và thi công cao tốc Bắc – Nam giai đoạn 2 (2021–2025), tổng chiều dài hơn 700 km.Dự án Sân bay Long Thành.",
       "Ứng dụng khoa học – công nghệ trong sản xuất\nDoanh nghiệp Việt như VinFast, Thaco đẩy mạnh sản xuất ô tô điện, xe bus điện."
     ],
     icon: Factory,
