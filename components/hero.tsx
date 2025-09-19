@@ -30,20 +30,20 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto text-center">
-          <Badge variant="secondary" className="mb-8 text-lg font-bold px-8 py-3 animate-glow shadow-lg">
+          <Badge variant="secondary" className="mb-8 text-lg font-emphasis px-8 py-3 animate-glow shadow-lg">
             <Sparkles className="w-5 h-5 mr-2" />
             Chủ nghĩa Mác-Lenin - MLN131 - Nhóm 7
           </Badge>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-balance mb-8 hero-text-shadow animate-fade-in-up">
+          <h1 className="text-main-title text-balance mb-8 hero-text-shadow animate-fade-in-up">
             Quá độ lên{" "}
-            <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-pulse-glow">
+            <span className="text-highlight-socialism animate-pulse-glow">
               Chủ Nghĩa Xã Hội
             </span>{" "}
             tại Việt Nam
           </h1>
 
-          <p className="text-xl md:text-2xl text-foreground/80 text-balance mb-12 max-w-4xl mx-auto leading-relaxed font-medium animate-slide-in-left">
+          <p className="text-body-large text-foreground/80 text-balance mb-12 max-w-4xl mx-auto animate-slide-in-left">
             Hành trình lịch sử vĩ đại từ xã hội phong kiến thực dân đến xã hội xã hội chủ nghĩa dưới sự lãnh đạo của
             Đảng Cộng sản Việt Nam
           </p>
@@ -51,7 +51,7 @@ export function Hero() {
           <div className="mb-12 animate-slide-in-right">
             <div className="relative inline-block group">
               <img
-                src="/ho-chi-minh-portrait-with-vietnamese-independence-.jpg"
+                src="/chu-nghia-xa-hoi-mang-den-nhung-gia-tri-tot-dep-cho-con-nguoi_2206171404.webp"
                 alt="Chủ tịch Hồ Chí Minh và Tuyên ngôn Độc lập"
                 className="mx-auto rounded-2xl shadow-2xl max-w-lg w-full transform group-hover:scale-105 transition-all duration-500"
               />
@@ -65,19 +65,19 @@ export function Hero() {
           >
             <div className="flex items-center gap-3 mb-6 justify-center">
               <Target className="w-8 h-8 text-primary" />
-              <h3 className="text-2xl font-bold text-primary">Mục tiêu nghiên cứu</h3>
+              <h3 className="text-section-heading text-primary">Mục tiêu nghiên cứu</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-colors border border-primary/10">
                   <BookOpen className="w-7 h-7 text-primary mt-1 flex-shrink-0" />
-                  <span className="text-lg font-medium">
+                  <span className="text-body text-emphasis">
                     Làm rõ lý do và cơ sở Việt Nam chọn con đường quá độ bỏ qua TBCN.
                   </span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-colors border border-secondary/20">
                   <Users className="w-7 h-7 text-secondary-foreground mt-1 flex-shrink-0" />
-                  <span className="text-lg font-medium">
+                  <span className="text-body text-emphasis">
                     Phân tích điều kiện chủ quan và khách quan tác động đến quá trình quá độ.
                   </span>
                 </div>
@@ -85,12 +85,12 @@ export function Hero() {
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-lg hover:bg-primary/10 transition-colors border border-primary/10">
                   <Star className="w-7 h-7 text-primary mt-1 flex-shrink-0" />
-                  <span className="text-lg font-medium">Hiểu rõ nội dung “bỏ qua TBCN” và cách Việt Nam vận dụng.</span>
+                  <span className="text-body text-emphasis">Hiểu rõ nội dung “bỏ qua TBCN” và cách Việt Nam vận dụng.</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-secondary/5 rounded-lg hover:bg-secondary/10 transition-colors border border-secondary/20">
                   <Target className="w-7 h-7 text-secondary-foreground mt-1 flex-shrink-0" />
-                  <span className="text-lg font-medium">
-                    Trình bày 8 đặc trưng và 8 phương hướng xây dựng CNXH theo Cương lĩnh 2011.
+                  <span className="text-body text-emphasis">
+                    Trình bày 8 đặc trưng và 8 phương hướng xây dựng <span className="text-highlight-socialism">CNXH</span> theo Cương lĩnh 2011.
                   </span>
                 </div>
               </div>

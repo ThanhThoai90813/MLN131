@@ -24,27 +24,27 @@ export function Header() {
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-primary-foreground rounded-full border-2 border-primary"></div>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-primary-foreground">Quá độ lên CNXH tại</h1>
-              <p className="text-xs text-primary-foreground/80">Việt Nam</p>
+              <h1 className="text-subheading text-primary-foreground">Quá độ lên <span className="text-highlight-socialism">CNXH</span> tại</h1>
+              <p className="text-caption text-primary-foreground/80 text-emphasis">Việt Nam</p>
             </div>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("timeline")}
-              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 font-medium hover:scale-105"
+              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 text-body text-emphasis hover:scale-105"
             >
               Quá độ lên XHCN
             </button>
             <button
               onClick={() => scrollToSection("theory")}
-              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 font-medium hover:scale-105"
+              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 text-body text-emphasis hover:scale-105"
             >
               Đặc trưng & phương pháp
             </button>
             <button
               onClick={() => scrollToSection("academic-integrity")}
-              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 font-medium hover:scale-105"
+              className="text-primary-foreground/90 hover:text-primary-foreground transition-all duration-200 text-body text-emphasis hover:scale-105"
             >
               Liêm chính học thuật
             </button>

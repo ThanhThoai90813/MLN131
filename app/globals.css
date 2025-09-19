@@ -76,8 +76,10 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Vietnamese Typography System */
+  --font-heading: var(--font-montserrat); /* Bold sans-serif for headings */
+  --font-body: var(--font-be-vietnam-pro); /* Clean sans-serif for body text */
+  --font-accent: var(--font-roboto); /* Alternative for variety */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -122,6 +124,149 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Vietnamese Typography System */
+@layer utilities {
+  /* Heading Typography - Montserrat Bold for strong, formal headings */
+  .font-heading {
+    font-family: var(--font-montserrat), sans-serif;
+  }
+
+  .font-body {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+  }
+
+  .font-accent {
+    font-family: var(--font-roboto), sans-serif;
+  }
+
+  /* Main Title - Large, bold, commanding presence */
+  .text-main-title {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 900; /* ExtraBold */
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Section Headings - Clear hierarchy */
+  .text-section-heading {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  /* Subheadings - Balanced weight */
+  .text-subheading {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    line-height: 1.3;
+  }
+
+  /* Body Text - Readable and clean */
+  .text-body {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.6;
+  }
+
+  /* Body Text Large - For important descriptions */
+  .text-body-large {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  /* Emphasis Text - For highlighting key terms */
+  .text-emphasis {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    font-weight: 700; /* Bold */
+  }
+
+  /* Caption Text - For small details */
+  .text-caption {
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  /* Special highlight for "Chủ Nghĩa Xã Hội" */
+  .text-highlight-socialism {
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 800; /* ExtraBold */
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease-in-out infinite;
+  }
+}
+
+/* Gradient animation for highlighted text */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 3D Flip Card Effects */
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Flip animation enhancements */
+  .flip-card-container {
+    perspective: 1000px;
+    height: 500px; /* Fixed height for consistent flipping */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s ease-in-out;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* Smooth hover effects for flip cards */
+  .flip-card-container:hover .flip-card-inner {
+    transform: scale(1.02);
   }
 }
 

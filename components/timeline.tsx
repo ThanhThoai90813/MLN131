@@ -17,7 +17,7 @@ const timelineEvents = [
     `,
     icon: BookOpen,
     category: "Lý thuyết",
-    image: "/ho-chi-minh-portrait-with-vietnamese-independence-.jpg",
+    image: "/download.jpg",
     significance: "Khẳng định con đường bỏ qua chế độ TBCN là tất yếu và phù hợp với điều kiện lịch sử cụ thể của Việt Nam."
   },
   {
@@ -48,7 +48,7 @@ const timelineEvents = [
     `,
     icon: Globe,
     category: "Quốc tế",
-    image: "/ho-chi-minh-reading-independence-declaration-at-ba.jpg",
+    image: "/cmt8.webp",
     significance: "Làm rõ tác động khách quan từ phong trào thế giới và thời đại, củng cố lựa chọn đi lên CNXH."
   },
   {
@@ -95,7 +95,7 @@ const timelineEvents = [
     `,
     icon: Flag,
     category: "Thách thức",
-    image: "/dien-bien-phu-victory-1954--vietnamese-soldiers-ce.jpg",
+    image: "/download (1).jpg",
     significance: "Cấm vận gây khó khăn kéo dài, cho thấy ý chí tự lực tự cường là điều kiện sống còn."
   },
   {
@@ -126,7 +126,7 @@ const timelineEvents = [
     `,
     icon: Star,
     category: "Kết luận",
-    image: "/vietnamese-flag-with-hammer-and-sickle-symbol--red.jpg",
+    image: "/download (2).jpg",
     significance: "Khẳng định quá độ bỏ qua TBCN là tất yếu, rút ngắn con đường phát triển và mang ý nghĩa lịch sử to lớn."
   }
 ]

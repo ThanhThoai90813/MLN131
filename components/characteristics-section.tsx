@@ -12,7 +12,7 @@ const characteristics = [
       "Mục tiêu tổng quát của CNXH là xóa bỏ áp bức bóc lột, xây dựng xã hội công bằng, bình đẳng, bác ái. Khi nhân dân giàu lên thì đất nước mạnh hơn, đủ sức chống lại mọi thách thức.",
     icon: TrendingUp,
     color: "from-primary to-primary/80",
-    image: "/vietnamese-prosperity-and-development--modern-citi.jpg",
+    image: "/le van phuc - tran thi minh tam 250625 01.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const characteristics = [
       "Xã hội XHCN là xã hội của nhân dân lao động – lực lượng đã làm nên cách mạng và xây dựng chế độ mới. Nhân dân giữ vai trò trung tâm, là chủ thể quản lý và quyết định sự phát triển đất nước.",
     icon: Users,
     color: "from-secondary to-secondary/80",
-    image: "/vietnamese-workers-and-farmers-participating-in-.jpg",
+    image: "/hien-phap-2013-nuoc-chxhcn-viet-nam-do-nhan-dan-lam-chu-2-750x429-1.jpg",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ const characteristics = [
       "Trong cộng đồng các dân tộc Việt Nam, mọi dân tộc đều bình đẳng, đoàn kết, cùng nhau phát triển. Đây là vấn đề chiến lược, bảo đảm sự gắn kết quốc gia và củng cố sức mạnh đại đoàn kết dân tộc.",
     icon: Globe,
     color: "from-secondary/80 to-primary",
-    image: "/vietnamese-ethnic-minorities-celebrating-togeth.jpg",
+    image: "/37_2024-5731710236061_ma-ket-dang.png",
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const characteristics = [
       "Nhà nước XHCN là kiểu nhà nước mới, mang bản chất giai cấp công nhân và nhân dân lao động, khác hẳn nhà nước bóc lột. Nhà nước này bảo đảm quyền và lợi ích của nhân dân, đặt dưới sự lãnh đạo của Đảng Cộng sản.",
     icon: Scale,
     color: "from-primary/80 to-secondary",
-    image: "/vietnamese-national-assembly-and-legal-system-.jpg",
+    image: "/be-mac-hoi-nghi-tu-6-xiii-bm-9-5844.jpg",
   },
   {
     id: 8,
@@ -75,7 +75,7 @@ const characteristics = [
       "Việt Nam thực hiện đường lối đối ngoại độc lập, tự chủ, hòa bình, hữu nghị, hợp tác bình đẳng và cùng phát triển. CNXH Việt Nam gắn bó với phong trào hòa bình, độc lập dân tộc và tiến bộ xã hội trên thế giới.",
     icon: Handshake,
     color: "from-secondary to-primary/80",
-    image: "/vietnam-international-cooperation-and-diplomac.jpg",
+    image: "/thu_truong_ha_kim_ngoc_2.jpg",
   },
 ]
 
@@ -93,12 +93,12 @@ export function CharacteristicsSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
-          <Badge className="mb-6 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg font-bold shadow-lg">
-            Đặc Trưng Chủ Nghĩa Xã Hội
+          <Badge className="mb-6 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-emphasis shadow-lg">
+            Đặc Trưng <span className="text-highlight-socialism">Chủ Nghĩa Xã Hội</span>
           </Badge>
-          <h2 className="text-4xl md:text-6xl font-black text-primary mb-6 hero-text-shadow">8 Đặc Trưng Cơ Bản</h2>
-          <p className="text-xl text-foreground/80 max-w-4xl mx-auto leading-relaxed font-medium">
-            Theo Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên CNXH (bổ sung, phát triển năm 2011 – Đại hội XI)
+          <h2 className="text-main-title text-primary mb-6 hero-text-shadow">8 Đặc Trưng Cơ Bản</h2>
+          <p className="text-body-large text-foreground/80 max-w-4xl mx-auto">
+            THEO GIÁO Trình CHỦ NGHĨA XÃ HỘI KHOA HỌC (K-2021)
           </p>
         </div>
 
@@ -122,10 +122,10 @@ export function CharacteristicsSection() {
                         <IconComponent className="w-6 h-6" />
                       </div>
                       <div className="flex-1">
-                        <Badge className="mb-3 bg-secondary/20 text-secondary-foreground hover:bg-secondary/30 font-semibold">
+                        <Badge className="mb-3 bg-secondary/20 text-secondary-foreground hover:bg-secondary/30 text-caption text-emphasis">
                           Đặc trưng {characteristic.id}
                         </Badge>
-                        <CardTitle className="text-xl font-bold text-foreground leading-tight">
+                        <CardTitle className="text-subheading text-foreground leading-tight">
                           {characteristic.title}
                         </CardTitle>
                       </div>
@@ -140,7 +140,7 @@ export function CharacteristicsSection() {
                         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">{characteristic.description}</p>
+                    <p className="text-body text-muted-foreground">{characteristic.description}</p>
                   </CardContent>
                 </Card>
               </div>
